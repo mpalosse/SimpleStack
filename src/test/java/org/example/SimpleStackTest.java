@@ -17,7 +17,7 @@ class SimpleStackTest {
         Stack stack = new SimpleStack();
 
         // Then… (oracle)
-        assertTrue(stack.isEmpty(), "A new stack should be empty");
+        assertTrue(stack.isEmpty(), "A new stack must be empty");
         assertEquals( 0, stack.getSize(), "A new stack has no element");
     }
 
@@ -33,9 +33,9 @@ class SimpleStackTest {
         stack.push(item);
 
         // Then…
-        assertFalse(stack.isEmpty(), "The stack must be not empty");
-        assertEquals(1, stack.getSize(),"The stack constains 1 item");
-        assertSame( item, stack.peek(),"The pushed item is on top of the stack");
+        assertFalse(stack.isEmpty(), "The stack must not be empty");
+        assertEquals(1, stack.getSize(),"The stack must constain 1 item");
+        assertSame( item, stack.peek(),"The pushed item must be is on top of the stack");
 
         // Given a new item to add
         Item item2 = new SimpleItem();
@@ -45,8 +45,8 @@ class SimpleStackTest {
 
         // then...
         assertFalse(stack.isEmpty(), "The stack must be not empty");
-        assertEquals(2, stack.getSize(),"The stack constains 2 items");
-        assertSame( item2, stack.peek(),"The pushed item is on top of the stack");
+        assertEquals(2, stack.getSize(),"The stack must constain 2 items");
+        assertSame( item2, stack.peek(),"The pushed item must be on top of the stack");
     }
 
     @Test
@@ -57,7 +57,7 @@ class SimpleStackTest {
         Stack stack = new SimpleStack();
 
         // When we "pop" the stack, should throws an EmptyStackException.
-        //assertThrows(EmptyStackException.class, ()->stack.pop());
-        assertThrows(EmptyStackException.class, stack::pop);
+        //assertThrows(EmptyStackException.class, ()->stack.pop(), "EmptyStackException not thrown");
+        assertThrows(EmptyStackException.class, stack::pop, "EmptyStackException not thrown");
     }
 }
