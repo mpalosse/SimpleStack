@@ -4,7 +4,7 @@
 
 ### 1.1 Modification du fichier README
 
-Clonez votre projet dans un dossier de tarvail sur votre machine.
+Clonez votre projet dans un dossier de travail sur votre machine.
 Modifiez le fichier README avec vos nom, prénom.
 
 > fix #1.1 Fichier README OK
@@ -16,7 +16,7 @@ Certaines caractéristiques du projet et les dépendances sont décrites dans le
 
 1. Ouvrez le projet cloné avec IntelliJ.
 Suivez les indications de votre enseignant pour disposer d'un environnement prêt à l'emploi.
-2. Étudiez l'arborescence du projet et le contenu du fichier ``pom.xml``.
+2. Étudiez la structure du projet et le contenu du fichier ``pom.xml``.
 Quelle esl la version de JUnit utilisée par le projet ?  
 ..............................
 
