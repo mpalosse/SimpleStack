@@ -5,7 +5,7 @@
 ### 1.1 Modification du fichier README
 
 Clonez votre projet dans un dossier de travail sur votre machine.
-Modifiez le fichier README avec vos nom, prénom.
+Modifiez le fichier README avec vos nom, prénom et groupe.
 
 > fix #1.1 Fichier README OK
 
